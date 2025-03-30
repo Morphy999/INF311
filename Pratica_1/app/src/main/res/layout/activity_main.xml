@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_expression"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="|"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:gravity="end"
+        android:paddingTop="30dp"
+        android:layout_marginEnd="5dp"
+    />
+
+    <TextView
+        android:id="@+id/txt_result"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:gravity="end"
+        android:layout_marginEnd="5dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/clear_button"
+            style="@style/Operator_Button"
+            android:layout_weight="3"
+            android:text="@string/clear_button"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/division_button"
+            style="@style/Operator_Button"
+            android:layout_weight="1"
+            android:text="@string/division_button"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/number_seven_button"
+            style="@style/Number_Button"
+            android:layout_weight="1"
+            android:text="@string/number_seven"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/number_eight_button"
+            style="@style/Number_Button"
+            android:layout_weight="1"
+            android:text="@string/number_eight"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/number_nine_button"
+            style="@style/Number_Button"
+            android:layout_weight="1"
+            android:text="@string/number_nine"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/multiply_button"
+            style="@style/Operator_Button"
+            android:layout_weight="1"
+            android:text="@string/multiply_button"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/number_four_button"
+            style="@style/Number_Button"
+            android:layout_weight="1"
+            android:text="@string/number_four"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/number_five_button"
+            style="@style/Number_Button"
+            android:layout_weight="1"
+            android:text="@string/number_five"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/number_six_button"
+            style="@style/Number_Button"
+            android:layout_weight="1"
+            android:text="@string/number_six"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/negative_button"
+            style="@style/Operator_Button"
+            android:layout_weight="1"
+            android:text="@string/negative_button"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/number_one_button"
+            style="@style/Number_Button"
+            android:layout_weight="1"
+            android:text="@string/number_one"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/number_two_button"
+            style="@style/Number_Button"
+            android:layout_weight="1"
+            android:text="@string/number_two"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/number_three_button"
+            style="@style/Number_Button"
+            android:layout_weight="1"
+            android:text="@string/number_three"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/plus_button"
+            style="@style/Operator_Button"
+            android:layout_weight="1"
+            android:text="@string/plus_button"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/number_zero_button"
+            style="@style/Number_Button"
+            android:layout_weight="1"
+            android:text="@string/number_zero"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/comma_button"
+            style="@style/Number_Button"
+            android:layout_weight="1"
+            android:text="@string/comma_button"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/backspace_button"
+            style="@style/Number_Button"
+            android:src="@drawable/backspace"
+            android:scaleType="center"
+            android:layout_weight="1"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/equal_button"
+            style="@style/Operator_Button"
+            android:layout_weight="1"
+            android:text="@string/equal_button"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
