@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral10"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/label_nome_local"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do local:"
+        android:textColor="@color/white"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <AutoCompleteTextView
+        android:id="@+id/input_nome_local"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:textColor="@color/white"
+        android:completionThreshold="1"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_nome_local" />
+
+    <TextView
+        android:id="@+id/label_categoria_local"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categoria do Local:"
+        android:textColor="@color/white"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="@id/input_nome_local"
+        app:layout_constraintTop_toBottomOf="@id/input_nome_local" />
+
+    <Spinner
+        android:id="@+id/spinner_categoria"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="@id/label_categoria_local"
+        app:layout_constraintTop_toBottomOf="@id/label_categoria_local" />
+
+    <TextView
+        android:id="@+id/label_posicionamento_global"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Posicionamento Global"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/spinner_categoria"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/label_latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude:"
+        android:textColor="@color/white"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_posicionamento_global" />
+
+    <TextView
+        android:id="@+id/valor_latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@id/label_latitude"
+        app:layout_constraintTop_toTopOf="@id/label_latitude" />
+
+    <TextView
+        android:id="@+id/label_longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude:"
+        android:textColor="@color/white"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_latitude" />
+
+    <TextView
+        android:id="@+id/valor_longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@id/label_longitude"
+        app:layout_constraintTop_toTopOf="@id/label_longitude" />
+
+    <Button
+        android:id="@+id/btn_checkin"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="CHECK-IN"
+        android:textColor="@color/white"
+        android:backgroundTint="#141414"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:onClick="checkin"
+        app:layout_constraintTop_toBottomOf="@id/label_longitude"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
